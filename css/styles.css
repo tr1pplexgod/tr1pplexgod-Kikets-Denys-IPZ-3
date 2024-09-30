@@ -153,33 +153,21 @@ a {
     justify-content: center;
     gap: 8px;
     align-items: center;
-    margin-bottom: 50px;
-    
-    .button-list-element {
-        background-color: var(--like_white);
-    }
-
-        button {
-            transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
-            border: none;
-        }
-        button:hover, a:focus {
-            color: var(--white);
-            background-color: var(--blue);
-        }
-    }
-
+}
 
 .button-list-element {
-    background: var(--like_white);
+    background-color: var(--like_white);
+    color: var(--black);
+}
 
-    button {
-        transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
-        border: none;   
-    }
-    button:hover, a:focus {
-        color: var(--white);
-        background-color: var(--blue);
+button {
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+    border: none;
+}
+
+button:hover, a:focus {
+    color: var(--white);
+    background-color: var(--blue);
 }
 
 .buton-list-buttons {
@@ -192,8 +180,41 @@ a {
     padding: 6px 22px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    }
 }
+.button-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.button-list-element {
+    background-color: var(--like_white);
+    color: var(--black);
+}
+
+button {
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+    border: none;
+}
+
+button:hover, a:focus {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.button-list-buttons {
+    color: var(--black);
+    background: var(--like_white);
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 22px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+
 
 .project-list-element {
     border: 1px solid #EEE;
