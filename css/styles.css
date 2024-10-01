@@ -154,9 +154,8 @@ a {
     justify-content: center;
     gap: 8px;
     align-items: center;
-}
 
-.button-list-element {
+    .button-list-element {
     background-color: var(--like_white);
     color: var(--black);
 }
@@ -168,7 +167,10 @@ button {
 
 button:hover, a:focus {
     color: var(--white);
+    background-color: var(--blue);
 }
+}
+
 
 .button-list-element {
     background: var(--like_white);
