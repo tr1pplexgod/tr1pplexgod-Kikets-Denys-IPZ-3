@@ -183,7 +183,6 @@ button {
 
 button:hover, a:focus {
     color: var(--white);
-    background-color: var(--blue);
 }
 
 .button-list-buttons {
