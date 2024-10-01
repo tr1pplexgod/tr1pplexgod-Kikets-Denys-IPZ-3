@@ -7,7 +7,7 @@
     --like_white: #f5f4fa;
     --fonts: "Roboto";
 }
-
+    
 body {
     font-family: var(--fonts), sans-serif;
     color: var(--black);
@@ -113,7 +113,8 @@ a {
 
 .details-list-text {
     color: var(--grey);
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
@@ -153,54 +154,34 @@ a {
     justify-content: center;
     gap: 8px;
     align-items: center;
-}
+    .button-list-element {
+        background-color: var(--like_white);
+        color: var(--black);
+    }
+
+        button {
+            transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+            border: none;
+        }
+        button:hover, a:focus {
+            color: var(--white);
+            background-color: var(--blue);
+        }
+    }
+
 
 .button-list-element {
-    background-color: var(--like_white);
-    color: var(--black);
-}
-
-button {
-    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
-    border: none;
-}
-
-button:hover, a:focus {
-    color: var(--white);
-    background-color: var(--blue);
-}
-
-.buton-list-buttons {
-    color: var(--black);
     background: var(--like_white);
-    text-align: center;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 6px 22px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-}
-.button-list {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    align-items: center;
-}
-
-.button-list-element {
-    background-color: var(--like_white);
     color: var(--black);
-}
 
-button {
-    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
-    border: none;
-}
-
-button:hover, a:focus {
-    color: var(--white);
-    background-color: var(--blue);
+    button {
+        transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+        border: none;   
+    }
+    
+    button:hover, a:focus {
+        color: var(--white);
+        background-color: var(--blue);
 }
 
 .button-list-buttons {
@@ -213,16 +194,16 @@ button:hover, a:focus {
     padding: 6px 22px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+    }
 }
 
 
-.project-list-element {
+.projects-list-element {
     border: 1px solid #EEE;
     background: var(--white);
 }
 
-.project-list-title {
-    color: var(--black);
+.projects-list-title {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
@@ -230,7 +211,7 @@ button:hover, a:focus {
     margin-bottom: 4px;
 }
 
-.project-list-text {
+.projects-list-text {
     color: var(--grey);
     font-size: 16px;;
     line-height: 1.875;
@@ -256,8 +237,8 @@ button:hover, a:focus {
         letter-spacing: 0.03em;
     }
     .footer-contacts {
-        color: var(--grey);
-        line-height: 16px;
+        color: rgba(255,255,255,0.6);
+        line-height: 1.6;
         font-style: normal;
         letter-spacing: 0.03em;
 
