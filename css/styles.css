@@ -154,34 +154,36 @@ a {
     justify-content: center;
     gap: 8px;
     align-items: center;
-    .button-list-element {
-        background-color: var(--like_white);
-        color: var(--black);
-    }
+}
 
-        button {
-            transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
-            border: none;
-        }
-        button:hover, a:focus {
-            color: var(--white);
-            background-color: var(--blue);
-        }
-    }
+.button-list-element {
+    background-color: var(--like_white);
+    color: var(--black);
+}
 
+button {
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+    border: none;
+}
+
+button:hover, a:focus {
+    color: var(--white);
+    background-color: var(--blue);
+}
 
 .button-list-element {
     background: var(--like_white);
     color: var(--black);
+}
 
-    button {
-        transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
-        border: none;   
-    }
-    
-    button:hover, a:focus {
-        color: var(--white);
-        background-color: var(--blue);
+button {
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+    border: none;
+}
+
+button:hover, a:focus {
+    color: var(--white);
+    background-color: var(--blue);
 }
 
 .button-list-buttons {
@@ -194,8 +196,8 @@ a {
     padding: 6px 22px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    }
 }
+
 
 
 .projects-list-element {
