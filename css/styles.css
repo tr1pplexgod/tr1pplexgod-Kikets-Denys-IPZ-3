@@ -1,0 +1,254 @@
+:root {
+    --black: #212121;
+    --white: #ffffff;
+    --footer_color: #2f303a;
+    --blue: #2196f3;
+    --grey: #757575;
+    --like_white: #f5f4fa;
+    --fonts: "Roboto";
+}
+    
+body {
+    font-family: var(--fonts), sans-serif;
+    color: var(--black);
+    font-style: normal;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+li {
+    list-style-type: none;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contacts-info {
+    color: var(--grey);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    a {
+        transition: color 300ms ease-in-out;
+    }
+
+    a:hover, a:focus {
+        color: var(--blue);
+    }
+}
+
+.pages-list {
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+}
+
+.page-link {
+    a {
+        font-weight: 500;
+        transition: color 300ms ease-in-out;
+        letter-spacing: 0.02em;
+    }
+    a:hover, a:focus {
+        color: var(--blue);
+    }
+}
+.sec1 {
+    background-color: var(--footer_color);
+}
+
+.header-logo {
+    color: var(--blue);
+    > span {
+        color: var(--black);
+    }
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.main-sec1-title {
+    color: var(--white);
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.order-button {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    background: var(--blue);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px 24px;
+    transition: background-color 0.5s;
+}
+
+.details-list-title {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.details-list-text {
+    color: var(--grey);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.activities-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.members {
+    background: var(--like_white);
+}
+
+.members-title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+}
+
+.member-name{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+.member-spec{
+    color: var(--grey);
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+}
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+
+    .button-list-element {
+    background-color: var(--like_white);
+    color: var(--black);
+}
+
+button {
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+    border: none;
+}
+
+button:hover, a:focus {
+    color: var(--white);
+    background-color: var(--blue);
+}
+}
+
+
+.button-list-element {
+    background: var(--like_white);
+    color: var(--black);
+}
+
+button {
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+    border: none;
+}
+
+button:hover, a:focus {
+    color: var(--white);
+}
+
+.button-list-buttons {
+    color: var(--black);
+    background: var(--like_white);
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 22px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+
+
+
+.projects-list-element {
+    border: 1px solid #EEE;
+    background: var(--white);
+}
+
+.projects-list-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
+.projects-list-text {
+    color: var(--grey);
+    font-size: 16px;;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+}
+
+.footer {
+    background-color: var(--footer_color);
+    
+    .footer-logo {
+        color: var(--blue);
+        > span {
+            color: var(--white);
+        }
+        font-family: Raleway, sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+    }
+    .address {
+        color: var(--white);
+        line-height: 115%;
+        letter-spacing: 0.03em;
+    }
+    .footer-contacts {
+        color: rgba(255,255,255,0.6);
+        line-height: 1.6;
+        font-style: normal;
+        letter-spacing: 0.03em;
+
+        a {
+            transition: color 300ms ease-in-out;
+        }
+        a:hover, a:focus {
+            color: var(--blue);
+        }
+    }
+}
