@@ -261,7 +261,7 @@ a {
 
 .button-list {
     padding-top: 94px;
-    margin: 50px;
+    margin-bottom: 34px;
     display: flex;
     justify-content: center;
     gap: 8px;
