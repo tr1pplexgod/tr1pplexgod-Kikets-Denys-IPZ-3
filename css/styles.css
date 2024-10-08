@@ -9,12 +9,21 @@
 }
     
 body {
-    font-family: var(--fonts), sans-serif;
+           font-family: var(--fonts), sans-serif;
     color: var(--black);
     font-style: normal;
     line-height: normal;
     font-size: 14px;
     font-weight: 400;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -35,10 +44,38 @@ a {
     color: inherit;
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header nav {
+    margin-left: 93px;
+}
+
 .contacts-info {
+    display: flex;
+    margin-left: auto;
+    gap: 40px;
     color: var(--grey);
     font-weight: 500;
     letter-spacing: 0.02em;
+
 
     a {
         transition: color 300ms ease-in-out;
@@ -49,10 +86,18 @@ a {
     }
 }
 
+
 .pages-list {
     display: flex;
     gap: 50px;
-    margin-left: 93px;
+
+    a {
+        transition: color 300ms ease-in-out;
+    }
+
+    a:hover, a:focus {
+        color: var(--blue);
+    }
 }
 
 .page-link {
@@ -67,6 +112,10 @@ a {
 }
 .sec1 {
     background-color: var(--footer_color);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .header-logo {
@@ -88,6 +137,8 @@ a {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin: auto;
+    max-width: 696px;
 }
 
 .order-button {
@@ -102,6 +153,27 @@ a {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 10px 24px;
     transition: background-color 0.5s;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.order-button:hover,
+.order-button:focus {
+    background-color: var(--blue);
+}
+
+.details {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.details-list {
+    gap: 30px;
+    display: flex;
+}
+
+.details-list-element {
+    max-width: 270px;   
 }
 
 .details-list-title {
@@ -116,6 +188,12 @@ a {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-top: 10px;
+}
+
+.activities {
+    text-align: center;
+    padding-bottom: 94px;
 }
 
 .activities-title {
@@ -123,16 +201,46 @@ a {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    
+}
+
+.activities-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
 }
 
 .members {
     background: var(--like_white);
+    text-align: center;
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .members-title {
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.members-list {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+
+.member {
+    border-radius: 0px 0px 4px 4px;
+    background: var(--white);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+}
+
+.member-photo {
+    margin-bottom: 30px;
 }
 
 .member-name{
@@ -140,6 +248,7 @@ a {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 
 .member-spec{
@@ -147,9 +256,12 @@ a {
     text-align: center;
     font-size: 16px;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
 }
 
 .button-list {
+    padding-top: 94px;
+    margin: 50px;
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -198,11 +310,26 @@ button:hover, a:focus {
     letter-spacing: 0.03em;
 }
 
-
-
 .projects-list-element {
     border: 1px solid #EEE;
     background: var(--white);
+    max-width: 370px;
+}
+
+.projects-list-element a{
+    display: block;
+}
+
+.projects-list-img {
+    width: 100%;
+}
+
+.projects-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 94px;
 }
 
 .projects-list-title {
@@ -210,7 +337,9 @@ button:hover, a:focus {
     font-weight: 700;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-bottom: 4px;
+    margin-bottom: 4px; 
+    margin-left: 24px;
+    margin-top: 20px;
 }
 
 .projects-list-text {
@@ -218,10 +347,23 @@ button:hover, a:focus {
     font-size: 16px;;
     line-height: 1.875;
     letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    margin-left: 24px;
+}
+
+.projects-list-element-text {
+    padding: 20px;
+    margin: 5px;
 }
 
 .footer {
     background-color: var(--footer_color);
+}
+
+.footer .container { 
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
     
     .footer-logo {
         color: var(--blue);
@@ -232,11 +374,18 @@ button:hover, a:focus {
         font-size: 26px;
         font-weight: 700;
         letter-spacing: 0.03em;
+        display: inline-block;
+        margin-bottom: 28px;
+    }
+
+    .footer address ul li:not(:last-child) {
+        margin-bottom: 12px;
     }
     .address {
         color: var(--white);
         line-height: 115%;
         letter-spacing: 0.03em;
+        margin-bottom: 12px;
     }
     .footer-contacts {
         color: rgba(255,255,255,0.6);
@@ -251,4 +400,4 @@ button:hover, a:focus {
             color: var(--blue);
         }
     }
-}
+
