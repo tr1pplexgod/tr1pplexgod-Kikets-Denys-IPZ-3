@@ -231,6 +231,20 @@ a {
     justify-content: center;
 }
 
+.activities-box {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 27px 0;
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.activities-text {
+    font-size: 14px;
+    font-weight: 700;
+}
+
 .members {
     background: var(--like_white);
     text-align: center;
