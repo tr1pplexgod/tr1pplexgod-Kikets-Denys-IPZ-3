@@ -251,6 +251,10 @@ a {
     position: relative;
 }
 
+.activities-list-element img {
+    display: block;
+}
+
 .activities-box {
     display: flex;
     height: 70px;
