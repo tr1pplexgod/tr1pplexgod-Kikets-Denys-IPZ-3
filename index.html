@@ -71,7 +71,7 @@
                     <h1 class="main-sec1-title">
                         ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
                     </h1>
-                    <button type="button" class="order-button">
+                    <button type="button" class="order-button" data-modal-open>
                         Замовити послугу
                     </button>
                 </div>
@@ -151,6 +151,9 @@
                                 width="370"
                                 height="294"
                             />
+                            <div class="activities-box">
+                                <p class="activities-text">Десктопні додатки</p>
+                            </div>
                         </li>
                         <li class="activities-list-element">
                             <img
@@ -159,6 +162,9 @@
                                 width="370"
                                 height="294"
                             />
+                            <div class="activities-box">
+                                <p class="activities-text">Мобільні додатки</p>
+                            </div>
                         </li>
                         <li class="activities-list-element">
                             <img
@@ -167,6 +173,11 @@
                                 width="370"
                                 height="294"
                             />
+                            <div class="activities-box">
+                                <p class="activities-text">
+                                    Дизайнерські рішення
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -618,5 +629,15 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close-btn" data-modal-close>
+                    <svg class="close-button" width="18" height="18">
+                        <use href="./img/svg/icons.svg#icon-close-button"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
