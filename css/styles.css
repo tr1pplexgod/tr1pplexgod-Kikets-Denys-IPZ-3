@@ -514,6 +514,7 @@ button:focus {
     margin-bottom: 12px;
 }
 .address {
+    width: 207px;
     color: var(--white);
     line-height: 115%;
     letter-spacing: 0.03em;
@@ -846,7 +847,6 @@ button:focus {
 
 .subscribe {
     flex-grow: 1;
-    padding-left: 94px;
 }
 
 .subscribe-form {
